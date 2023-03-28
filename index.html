@@ -56,7 +56,7 @@
                 Welcome to your <br> professional community
             </h3>
             <div class="formWrapper">
-                <form>
+                <form name="loginForm" onsubmit="return validateForm()">
                     <div class="emailInputWrapper input">
                         <label for="emali">Email or phone</label>
                         <input title="email" required type="email" placeholder="Email" name="email">
@@ -90,6 +90,23 @@
             <img src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" alt="linkedin AVATAR">
         </div>
     </section>
+    <script>
+        function validateForm() {
+            const emailInput = document.forms["loginForm"]["email"];
+            const passwordInput = document.forms["loginForm"]["password"];
+
+            if (emailInput.value === "") {
+                emailInput.style.borderColor = "red";
+                alert("Please enter your email");
+                return false;
+            }
+            if (passwordInput.value === "") {
+                passwordInput.style.borderColor = "red";
+                alert("Please enter your password");
+                return false;
+            }
+        }
+    </script>
     <script defer type="text/javascript" src="./javascript.js"></script>
 
 </body>
