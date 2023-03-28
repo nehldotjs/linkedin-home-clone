@@ -5,13 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-Y83HcOulw0odLyv+6Ujx6KyX/J6TumJbq3PrsWQ73FyGhMZDdMwV7QZzv3qV7vevrzshcGcw7bw/VJpBYuYdOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LinkedIn Sign In Page Clone</title>
 </head>
 
 <body>
-    <h3>HLLO WORLD how far
-        npm run deploy
-    </h3>
+    <section class="navSection">
+        <div class="logo">
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo.png" alt="">
+        </div>
+        <div class="navPropertyWrapper">
+            <div class="iconWrapper">
+                <div class="iconContainer">
+                    <div class="mainIcon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/795/795653.png" alt="">
+                    </div>
+                    <div class="iconName">Discover</div>
+                </div>
+                <div class="iconContainer">
+                    <div class="mainIcon"><img src="https://cdn-icons-png.flaticon.com/512/2118/2118701.png" alt="">
+                    </div>
+                    <div class="iconName">People</div>
+                </div>
+                <div class="iconContainer">
+                    <div class="mainIcon"><img src="https://cdn-icons-png.flaticon.com/512/2232/2232543.png" alt="">
+                    </div>
+                    <div class="iconName">Learning</div>
+                </div>
+                <div class="iconContainer">
+                    <div class="mainIcon"><img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="">
+                    </div>
+                    <div class="iconName">Jobs</div>
+                </div>
+            </div>
+            <div class="navhr"></div>
+            <div class="link">
+                <h3>Join now</h3>
+                <div class="navSignInBtn">
+                    <button class="navSignIn">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="loginSection">
+        <div class="loginFormWrapper">
+            <h3>
+                Welcome to your <br> professional community
+            </h3>
+            <div class="formWrapper">
+                <form>
+                    <div class="emailInputWrapper input">
+                        <label for="emali">Email or phone</label>
+                        <input title="email" required type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="passwordInputWrapper input">
+                        <label for="password">Password or phone</label>
+                        <input title="password" required type="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="buttonWrapper">
+                        <h4>Forgot password?</h4>
+                        <button type="submit" class="signInBtn">Sign in</button>
+                        <div class="hr">
+                            <hr>or
+                            <hr>
+                        </div>
+                        <button class="googleSignInAuthBtn" type="button"
+                            onclick="alert('Sorry, the Google Auth button  is not functional.')">
+                            <div class="googleIconWrapper">
+                                <img src="https://aux.iconspalace.com/uploads/13344252201232651336.png"
+                                    alt="google icon">
+                            </div> Sign in with Gooogle
+                        </button>
+                        <button type="button" onclick="alert('Sorry, the LinkedIn Auth button is not functional.')"
+                            class="linkedInSignInAuthBtn">New to LinkedIn? Join now </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="avatarWrapper">
+            <img src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" alt="linkedin AVATAR">
+        </div>
+    </section>
+    <script defer type="text/javascript" src="./javascript.js"></script>
+
 </body>
 
 </html>

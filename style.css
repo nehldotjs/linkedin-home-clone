@@ -1,0 +1,534 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    padding: 0px 10px;
+    padding-top: 5%;
+}
+
+.navSection {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2%;
+    padding: 0px 90px;
+}
+
+.navSection .logo {
+    display: flex;
+    margin: auto;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.navSection .logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+
+.navSection .navPropertyWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    /* padding: 5px; */
+    gap: 20px;
+}
+
+.navSection .navPropertyWrapper .link {
+    display: flex;
+    margin: auto;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navSection .navPropertyWrapper .navhr {
+    display: flex;
+    margin: auto;
+    height: 30px;
+    width: 1px;
+    background-color: #000;
+}
+
+.navSection .navPropertyWrapper .iconWrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 10px;
+}
+
+.navSection .navPropertyWrapper .iconWrapper .iconContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.navSection .navPropertyWrapper .iconWrapper .iconContainer .mainIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 25px;
+    width: 25px;
+
+}
+
+.navSection .navPropertyWrapper .iconWrapper .iconContainer .mainIcon img {
+    margin: auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.navSection .navPropertyWrapper .iconWrapper .iconContainer .iconName {
+    font-size: 12px;
+    display: flex;
+    margin: auto;
+}
+
+.navSection .navPropertyWrapper .link {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    gap: 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navSection .navPropertyWrapper .link h3 {
+    cursor: pointer;
+    color: #434343;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navSection .navPropertyWrapper .link button {
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin: auto;
+    font-weight: bold;
+    color: rgb(29, 110, 242);
+    border: 1px solid rgb(29, 110, 242);
+}
+
+/* ////////////////////////////////////////////// */
+
+.loginSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.loginSection .avatarWrapper {
+    height: 500px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.loginSection .avatarWrapper img {
+    display: flex;
+    margin: auto;
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+
+.loginSection .loginFormWrapper {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.loginSection .loginFormWrapper h3 {
+    font-size: 55px;
+    font-weight: lighter;
+    color: brown;
+}
+
+.loginSection .loginFormWrapper .formWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: auto;
+}
+
+.loginSection .loginFormWrapper .formWrapper form {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loginSection .loginFormWrapper .formWrapper .input {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    width: 90%;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.loginSection .loginFormWrapper .formWrapper .input input {
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.hr {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.hr hr {
+    height: 1px;
+    background-color: #434343;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border: none;
+}
+
+.buttonWrapper {
+    width: 80%;
+    gap: 15px;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginSection .loginFormWrapper .buttonWrapper h4 {
+    width: 100%;
+    color: rgb(57, 57, 137);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttonWrapper .signInBtn {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(29, 110, 242);
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 350ms all ease;
+}
+
+.buttonWrapper .signInBtn:hover {
+    background-color: rgb(13, 13, 206);
+}
+
+h4 {
+    color: rgb(29, 110, 242);
+}
+
+.googleSignInAuthBtn,
+.linkedInSignInAuthBtn {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(48, 48, 48);
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 350ms all ease;
+    margin: auto;
+    border: 1px solid #434343;
+    background-color: transparent;
+}
+
+.googleSignInAuthBtn .googleIconWrapper {
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0px 10px;
+}
+
+.googleSignInAuthBtn .googleIconWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+
+    .navSection {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        margin-bottom: 2%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .navSection .logo {
+        display: flex;
+        margin: auto;
+        height: 60px;
+        width: auto;
+        margin-right: 15%;
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    .navSection .navPropertyWrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: unset;
+        justify-content: space-between;
+        align-items: center;padding: 1px;
+    }
+
+    .navSection .navPropertyWrapper .iconWrapper {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navSection .navPropertyWrapper .navhr {
+        display: none;
+    }
+
+    .navSection .navPropertyWrapper .link {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        gap: unset;
+        justify-content: space-between;
+        align-items: center;
+        padding: none;
+    }
+
+    .navSection .navPropertyWrapper .link h3 {
+        cursor: pointer;
+        color: #434343;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 15px;
+        margin: unset;
+    }
+
+    .navSection .navPropertyWrapper .link button {
+        padding: 15px 20px;
+        border-radius: 30px;
+        margin: unset;
+        width: 100%;
+        font-weight: normal;
+        font-size: 15px;
+        background-color: transparent;
+        color: rgb(29, 110, 242);
+        border: 1px solid rgb(29, 110, 242);
+    }
+
+    .loginSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: unset;
+        padding: 10px;
+        margin: auto;
+        height: auto;
+        width: auto;
+        margin-bottom: 10%;
+    }
+
+
+    .loginSection .avatarWrapper {
+        height: auto;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: unset;
+        position: relative;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+
+    .loginSection .avatarWrapper img {
+        display: flex;
+        margin: auto;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+
+    .loginSection .loginFormWrapper {
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+
+    }
+
+
+    .loginSection .loginFormWrapper h3 {
+        font-size: 35px;
+        font-weight: lighter;
+        color: brown;
+        margin-bottom: 10%;
+    }
+
+    .loginSection .loginFormWrapper .formWrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: auto;
+        width: 100%;
+    }
+
+    .loginSection .loginFormWrapper .formWrapper form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .loginSection .loginFormWrapper .formWrapper .input {
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        flex: 1;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+
+
+    .buttonWrapper {
+        width: 100%;
+        gap: 15px;
+        height: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .googleSignInAuthBtn,
+    .linkedInSignInAuthBtn {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(48, 48, 48);
+        border-radius: 30px;
+        border: none;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 20px;
+        transition: 350ms all ease;
+        margin: auto;
+        border: 1px solid #434343;
+        background-color: transparent;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
